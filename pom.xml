@@ -8,7 +8,7 @@
 
     <name>${project.groupId}:${project.artifactId}</name>
     <description>A parent pom for maven based projects under this account</description>
-    <url>https://github.com/hemantsonu20/${project.artifactId}</url>
+    <url>https://github.com/hemantsonu20/hemantsonu20-parent</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -35,10 +35,10 @@
         </developer>
     </developers>
     <scm>
-        <connection>scm:git:git@github.com:hemantsonu20/${project.artifactId}.git</connection>
-        <developerConnection>scm:git:git@github.com:hemantsonu20/${project.artifactId}.git</developerConnection>
+        <connection>scm:git:git@github.com:hemantsonu20/hemantsonu20-parent.git</connection>
+        <developerConnection>scm:git:git@github.com:hemantsonu20/hemantsonu20-parent.git</developerConnection>
         <tag>${project.version}</tag>
-        <url>https://github.com/hemantsonu20/${project.artifactId}</url>
+        <url>https://github.com/hemantsonu20/hemantsonu20-parent</url>
     </scm>
 
     <distributionManagement>
