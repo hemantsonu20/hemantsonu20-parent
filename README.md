@@ -10,7 +10,7 @@ A parent pom for maven based projects under this account
 <dependency>
   <groupId>com.github.hemantsonu20</groupId>
   <artifactId>hemantsonu-parent</artifactId>
-  <version>0.0.1</version>
+  <version>1.0.0</version>
 </dependency>
 ```
 
