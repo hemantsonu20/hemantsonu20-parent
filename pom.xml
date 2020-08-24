@@ -99,12 +99,6 @@
                             <goal>jar</goal>
                         </goals>
                     </execution>
-                    <execution>
-                        <phase>install</phase>
-                        <goals>
-                            <goal>javadoc</goal>
-                        </goals>
-                    </execution>
                 </executions>
             </plugin>
 
