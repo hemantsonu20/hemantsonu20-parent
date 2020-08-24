@@ -3,7 +3,7 @@
 
     <groupId>com.github.hemantsonu20</groupId>
     <artifactId>hemantsonu-parent</artifactId>
-    <version>1.0.4</version>
+    <version>1.0.5-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>${project.groupId}:${project.artifactId}</name>
@@ -38,7 +38,7 @@
     <scm>
         <connection>scm:git:git@github.com:hemantsonu20/hemantsonu20-parent.git</connection>
         <developerConnection>scm:git:git@github.com:hemantsonu20/hemantsonu20-parent.git</developerConnection>
-        <tag>hemantsonu-parent-1.0.4</tag>
+        <tag>${project.version}</tag>
         <url>https://github.com/hemantsonu20/hemantsonu20-parent</url>
     </scm>
 
