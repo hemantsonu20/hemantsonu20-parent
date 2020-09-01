@@ -1,5 +1,5 @@
 ![Java CI with Maven](https://github.com/hemantsonu20/hemantsonu20-parent/workflows/Java%20CI%20with%20Maven/badge.svg)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.hemantsonu20/hemantsonu20-parent/badge.svg)](https://maven-badges.herokuapp.com/com.github.hemantsonu20/hemantsonu20-parent)
+[![Maven Central](https://img.shields.io/maven-central/v/com.github.hemantsonu20/hemantsonu-parent.svg?label=Maven%20Central&color=brightgreen)](https://search.maven.org/search?q=g:%22com.github.hemantsonu20%22%20AND%20a:%22hemantsonu-parent%22)
 
 
 # hemantsonu20-parent
