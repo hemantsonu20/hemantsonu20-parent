@@ -3,22 +3,22 @@
 
 
 # hemantsonu20-parent
-A parent pom for maven based projects under this account.
+A parent pom for maven based projects for maven central release.  
+This pom mainly defines plugins required for maven central releases.
 
-# Maven Artifact
+# Usage
+Define this plugin as a parent in your `pom.xml`.
 ```xml
-<dependency>
+<parent>
   <groupId>com.github.hemantsonu20</groupId>
   <artifactId>hemantsonu20-parent</artifactId>
   <version>2.0.0</version>
-</dependency>
+</parent>
 ```
 
-# Steps to release
-```
-$ mvn clean
-$ mvn release:prepare # -DdryRun=true
-$ mvn release:perform
-$ git push --tags
-$ git push origin master
-```
+
+## Contributing
+[See Contributing Guidelines](/CONTRIBUTING.md)
+
+## License
+[Apache License Version 2.0](/LICENSE)

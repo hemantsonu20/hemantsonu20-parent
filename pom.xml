@@ -7,7 +7,7 @@
     <packaging>pom</packaging>
 
     <name>${project.groupId}:${project.artifactId}</name>
-    <description>A parent pom for maven based projects under this account</description>
+    <description>A parent pom for maven based projects for maven central release.</description>
     <url>https://github.com/hemantsonu20/hemantsonu20-parent</url>
 
     <properties>
