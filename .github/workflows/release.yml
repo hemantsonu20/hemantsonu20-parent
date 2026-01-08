@@ -8,7 +8,7 @@ on:
         required: true
 
 jobs:
-  release:
+  maven-central-release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
@@ -38,6 +38,16 @@ jobs:
           MAVEN_PASSWORD: ${{ secrets.MAVEN_CENTRAL_PASSWORD }}
           MAVEN_GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
 
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ github.event.inputs.releaseVersion }}
+          generate_release_notes: true
+
+  github-release:
+    needs: [ maven-central-release ]
+    runs-on: ubuntu-latest
+    steps:
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
