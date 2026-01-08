@@ -1,13 +1,10 @@
 name: Release to Maven Central
-
+run-name: Release ${{ github.event.inputs.releaseVersion }} from ${{ github.ref_name }}
 on:
   workflow_dispatch:
     inputs:
       releaseVersion:
         description: 'Release version (e.g., 1.0.0)'
-        required: true
-      nextVersion:
-        description: 'Next snapshot version (e.g., 1.0.1-SNAPSHOT)'
         required: true
 
 jobs:
@@ -25,6 +22,10 @@ jobs:
           server-password: MAVEN_PASSWORD
           gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
           gpg-passphrase: MAVEN_GPG_PASSPHRASE
+      - name: Configure Git user
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "github-actions[bot]"
       - name: Build with Maven
         run: ./mvnw -B clean install
       - name: Release to Maven Central
